@@ -30,6 +30,12 @@
 // STEP 5: Display the day name in the element with ID "warmUpDate"
 //         using document.getElementById("warmUpDate").innerHTML
 
+let now = new Date().getDay();
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+today = days[now];
+document.getElementById("WarmUpDate").innerHTML
+
 
 // ============================================
 //  PART 1: Current Date Display
@@ -50,6 +56,14 @@
 
 // STEP 10: Build the date string: month + "/" + day + "/" + year
 //          Display it in the element with ID "myDate"
+
+month = now.getMonth();
+todaysMonth = month + 1;
+todaysDay = now.getDate();
+todaysYear = now.getFullYear();
+
+alert(todaysMonth + "/" + todaysDay + "/" + todaysYear);
+document.getElementById("myDate").innerHTML;
 
 
 // ============================================
